@@ -9,6 +9,12 @@ import { HomeComponent } from './componenti/home/home.component';
 import { HeaderComponent } from './componenti/header/header.component';
 import { MainComponent } from './componenti/main/main.component';
 
+// AngularMaterial
+import {MatTableModule} from '@angular/material/table';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,11 +22,15 @@ import { MainComponent } from './componenti/main/main.component';
     ContactComponent,
     HomeComponent,
     HeaderComponent,
-    MainComponent
+    MainComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    MatTableModule,
+    MatButtonModule,
+    AppRoutingModule,
+    MatCardModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
