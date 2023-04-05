@@ -14,6 +14,9 @@ import {MatTableModule} from '@angular/material/table';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -25,10 +28,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MainComponent,
   ],
   imports: [
+    MatFormFieldModule,
     BrowserModule,
+    MatIconModule,
     MatTableModule,
     MatButtonModule,
     AppRoutingModule,
+    MatChipsModule,
     MatCardModule,
     BrowserAnimationsModule
   ],
